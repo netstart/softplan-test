@@ -1,7 +1,6 @@
 # Gateway
 
 
-
 #### Using:
 - Spring Boot
 
@@ -24,3 +23,17 @@ metrics, sessions, etc.
 
 - Spring Boot DevTools
     Provides fast applications restarts, LiveReload, and configurations for enhanced development experience
+
+
+
+- Actuator:
+> http://localhost:8484/actuator/
+
+- Spring Boot Admin Server
+>  http://localhost:8484/admin
+
+- Spring Boot Hystrix Dashboard
+> http://localhost:8761/hystrix
+
+- Spring Cloud Eureka Server
+> http://localhost:8761/

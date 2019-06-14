@@ -1,0 +1,22 @@
+Estava utilizando o hystrix dashboard utiliza o Toncat, não é compativel com netty.io no momento.
+
+Caso remova o tomcat, assim:
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+			<exclusions>
+				<!-- hystrix adiciona por padrão, mas quero usar o netty.io -->
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+Teremos o erro:
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/Servlet
+
+Por não ser aplicação de produção, optei por deixar rodando o toncat mesmo, até porque, em uma arquitetura que precisa escalar,
+isto poderia ter uma aplicação dedicada a ser o Hyxtrix Dashboard.
+
+----------------------------------------------------------------------------------------------------------------------
