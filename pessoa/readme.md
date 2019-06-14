@@ -1,4 +1,8 @@
-Utilizando:
+# Person APPI
+
+
+
+#### Utilizando:
 - Spring Boot
 
 - Spring Reactive Web
@@ -21,6 +25,9 @@ metrics, sessions, etc.
 
 - Hystrix Dashboard
     Circuit breaker dashboard with Spring Cloud Netflix Hystrix
+
+- Spring Boot Admin client
+    Required for your appplication to register with a Spring Boot Admin Server instance
 
 - Spring Boot DevTools
     Provides fast applications restarts, LiveReload, and configurations for enhanced development experience
