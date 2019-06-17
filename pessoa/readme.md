@@ -35,3 +35,18 @@ metrics, sessions, etc.
 
 - Embedded MongoDB database
     Provides a platform neutral way for running MongoDB in unit tests
+
+
+#### Run
+
+> java -jar target/pessoa-0.0.1-SNAPSHOT.jar --server.port=9090
+> java -jar target/pessoa-0.0.1-SNAPSHOT.jar --server.port=9091
+
+
+Também pode optar por executar desta maneira
+> mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=9092
+
+
+Para ver as pessoas cadastradas:
+
+> http://localhost:8081/db/pessoadb/pesssoas

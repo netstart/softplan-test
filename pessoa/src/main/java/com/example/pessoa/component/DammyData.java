@@ -11,10 +11,10 @@ import java.util.UUID;
 
 import static java.lang.System.out;
 
-@Component
+//@Component
 public class DammyData implements CommandLineRunner {
 
-    @Autowired
+//    @Autowired
     private PessoaRepository pessoaRepository;
 
     @Override

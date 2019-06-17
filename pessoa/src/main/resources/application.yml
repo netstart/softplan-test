@@ -8,5 +8,3 @@ spring:
       database: pessoadb
       authentication-database: admin
 
-
-
