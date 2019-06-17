@@ -1,15 +1,23 @@
-package com.example.pessoa;
+package com.example.pessoa.document;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+@Document(collection = "pesssoas")
 public class Pessoa {
 
     @Id
     private String id;
-    
+
     private String nome;
+
+    public Pessoa() {
+    }
+
+    public Pessoa(String id, String nome) {
+        this.id = id;
+        this.nome = nome;
+    }
 
     public String getId() {
         return id;
