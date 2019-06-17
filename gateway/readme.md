@@ -26,6 +26,16 @@ metrics, sessions, etc.
 
 
 
+#### Run
+
+> java -jar target/gateway-0.0.1-SNAPSHOT.jar --server.port=8762
+> java -jar target/gateway-0.0.1-SNAPSHOT.jar --server.port=8763
+
+
+Também pode optar por executar desta maneira
+> mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=8764
+
+
 - Actuator:
 > http://localhost:8484/actuator/
 
