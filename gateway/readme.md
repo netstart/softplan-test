@@ -1,6 +1,5 @@
 # Gateway
 
-
 #### Using:
 - Spring Boot
 
@@ -47,3 +46,10 @@ Também pode optar por executar desta maneira
 
 - Spring Cloud Eureka Server
 > http://localhost:8761/
+
+
+
+#### Docker
+
+build
+> docker build .
