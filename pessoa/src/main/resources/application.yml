@@ -1,4 +1,14 @@
+server:
+  port: 7000
+
+# https://codecentric.github.io/spring-boot-admin/current/#spring-boot-admin-client
 spring:
+  application:
+    name: PESSOA
+  boot:
+    admin:
+      client:
+        url: http://localhost:8761/admin
   data:
     mongodb:
       password: MongoDB2019!
@@ -7,4 +17,23 @@ spring:
       port: 27017
       database: pessoadb
       authentication-database: admin
+
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 5
+#    leaseExpirationDurationInSeconds: 2
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#    healthcheck:
+#      enabled: true
+#    lease:
+#      duration: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
